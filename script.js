@@ -172,7 +172,6 @@ async function saveWeather() {
   }
 }
 
-  // === Load and Display Saved Records ===
   async function loadSavedWeather() {
     const res = await fetch("/api/weather");
     const data = await res.json();
