@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <div class="search-box">
+      <input type="text" id="locationInput" placeholder="Enter city or zip...">
+      <button type="button" onclick="getWeather()">Search!</button>
+      
+      <button type="button" onclick="getLocationWeather()">Use Live Location</button>
+    </div>
+
+    <div id="weather" class="weather-card"></div>
+    <h2 id="forecast-title" style="display: none;">5-Day Forecast</h2>
+    <div id="forecast" class="forecast-grid"></div>
+
+    <h2>Map View</h2>
+      <div id="map" style="width: 100%; height: 400px; border: 1px solid #ccc;"></div>
+
+    <div id="saveSection" style="display:none;">
+        <h2>Save This Weather</h2>
+        <button type="button" onclick="saveWeather()">Save Weather</button>
+    </div>
+
+    
+
+
+
+
+    <h3>Saved Records</h3>
+    <div id="savedWeather"></div>
+    <button type="button" onclick="exportData()">Export Saved Data</button>
+  </div>
+
+  
+
+
+
+  <script src="script.js"></script>
+</body>
+<footer class="footer">
+  <div class="footer-content" style="flex-direction: column; align-items: center;">
+    <span style="font-weight: bold;">Arnav Thorat</span>
+    <div class="pm-description" style="margin-top: 10px;">
+      <p>
+        The Product Manager Accelerator Program is designed to support PM professionals through every stage of their careers. From students looking for entry-level jobs to Directors looking to take on a leadership role, our program has helped over hundreds of students fulfill their career aspirations.
+      </p>
+      <p>
+        Our Product Manager Accelerator community are ambitious and committed. Through our program they have learnt, honed and developed new PM and leadership skills, giving them a strong foundation for their future endeavors.
+      </p>
+      <p>
+        Here are the examples of services we offer. Check out our website (link under my profile) to learn more about our services.
+      </p>
+    </div>
+  </div>
+</footer>
+ 
+</html>

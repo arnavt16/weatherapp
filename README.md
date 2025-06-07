@@ -6,11 +6,11 @@ Supports CRUD operations with Save Weather and export used with Debugger
 frontend features with current weather, 5-day forecast, and street view.
 
 Start Server & debugger instructions:
-```bash
-# 1. Clone
+```bash 
+
 git clone <repo-url> && cd weather-backend
 
-2. Install dependencies
+2. Install dependencies from package.json with Debug
 npm install
 
 4. Initialize database (creates SQLite file + table)
@@ -18,6 +18,9 @@ npm run init-db
 
 5. Start server
 npm start
+
+6. Load Website
+open from Live Server index.html
 ```
 
 Server listens on `http://localhost:PORT` (default 5000).

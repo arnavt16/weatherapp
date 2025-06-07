@@ -1,0 +1,145 @@
+body {
+  font-family: Georgia, sans-serif;
+  background: rgba(179, 160, 223, 0.527);
+  margin: 0;
+  padding: 0;
+  color: #424040;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4c00ff;
+}
+
+.search-box {
+  margin: 1rem 0;
+}
+
+.search-box input {
+  padding: 0.5rem;
+  width: 300px;
+  border-radius: 50px;
+  border: 1px solid #999;
+}
+
+.search-box button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.weather-card {
+  background-color: rgba(125, 136, 158, 0.568);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 140, 255, 0.2);
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 140, 255, 0.2);
+}
+
+.forecast-grid .card {
+  background-color: rgba(125, 136, 158, 0.568);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#saveSection {
+  margin-top: 2rem;
+}
+
+#saveSection button {
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  background-color: #4c00ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(76,0,255,0.12);
+  transition: background 0.18s, box-shadow 0.18s;
+}
+
+#saveSection button:hover {
+  background-color: #3a00cc;
+  box-shadow: 0 4px 12px rgba(76,0,255,0.19);
+}
+
+button {
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+#weatherForm textarea {
+  display: none;
+}
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 20px 0 10px 0;
+  text-align: center;
+  position: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.footer button {
+  background: #38bdf8;
+  border: none;
+  color: #222;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.footer button:hover {
+  background: #0ea5e9;
+  color: #fff;
+}
+.pm-description {
+  color: #fff;
+  background: #111;
+  border-radius: 8px;
+  padding: 15px 24px;
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 0.98rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
+}
